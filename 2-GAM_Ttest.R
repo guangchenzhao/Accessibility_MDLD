@@ -114,7 +114,7 @@ urban$pct_urban = urban$stateua_83m_pc/100
 urban = urban[,c(1,3)]
 colnames(urban) = c('BGFIPS', colnames(urban)[2])
 
-#percentage of workers working in different time threshold in eahc zone
+#percentage of workers working in different time thresholds in each zone (MDLD-based method)
 pct_worker_intime = fread('/pct_worker_intime_all.csv')
 pct_worker_intime$BGFIPS = as.character(pct_worker_intime$BGFIPS)
 pct_worker_intime = pct_worker_intime[,c(1:2, 9:14)]
